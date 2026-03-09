@@ -2698,7 +2698,7 @@ def market_session(sess_id, starttime, endtime, trader_spec, order_schedule, dum
     while time < endtime:
         timeindex = int(time / 229)
         if timeindex >= len(dates):
-            continue
+            break
         # how much time left, as a percentage?
 
 
